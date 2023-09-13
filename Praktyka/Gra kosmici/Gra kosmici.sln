@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gra kosmici", "Gra kosmici\Gra kosmici.csproj", "{BBF5FFE3-996B-42CD-BB90-28E0F24A0766}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3239EAB-1666-4B35-B37C-6A4A351C819B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF5FFE3-996B-42CD-BB90-28E0F24A0766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF5FFE3-996B-42CD-BB90-28E0F24A0766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF5FFE3-996B-42CD-BB90-28E0F24A0766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF5FFE3-996B-42CD-BB90-28E0F24A0766}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F07442D-DC66-457E-B48C-E3086BD4C512}
+	EndGlobalSection
+EndGlobal
