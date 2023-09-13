@@ -29,7 +29,7 @@
             <RowDefinition Height="160"/>
 
         </Grid.RowDefinitions>
-        <Button x:Name="StartButton" Content="Przycisk" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="32" Width="88" Background="{x:Null}" BorderBrush="#FF807676" Foreground="#FFEADBDB"/>
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Height="64" Width="78" Background="{x:Null}" BorderBrush="#FF807676" Foreground="#FFEADBDB" Margin="0,55,0,0" FontSize="20" Click="StartButton_Click"/>
         <StackPanel Grid.Column="2" Orientation="Vertical" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Style="{DynamicResource TextBlockStyle1}" TextWrapping="Wrap" Foreground="#FFE6DFDF" FontSize="22" TextAlignment="Center" Height="43" VerticalAlignment="Center" HorizontalAlignment="Center"><Run Language="en-gb" Text="Ich Unikaj"/><LineBreak/><Run Language="en-gb"/></TextBlock>
             <ContentControl Template="{DynamicResource EnemyTemplate}" Content="ContentControl" Background="#FFD7CACA" Foreground="#FFE3D0D0" Height="100"/>
