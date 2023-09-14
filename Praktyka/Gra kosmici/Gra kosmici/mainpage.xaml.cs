@@ -19,10 +19,10 @@ namespace Gra_kosmici
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class Mainpage : Page
+    public partial class mainpage : Gra_kosmici.Page1 
     {
         Random random = new Random();
-        public Page1()
+        public mainpage()
         {
             InitializeComponent();
         }
@@ -55,10 +55,11 @@ namespace Gra_kosmici
             Storyboard.SetTargetProperty(animation, propertyToAnimate);
             storyboard.Children.Add(animation);
             storyboard.Begin();
+            //, propertyToAnimate
 
-                
-            
-            
+
+
+
         }
         
                
