@@ -58,7 +58,19 @@ namespace projekt_dla_facetów_str_171
             BankCash.Text = "Bank ma " + bank + "zł";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            joe.GiveCash(10);
+            bob.ReceiveCash(10);
+            UpdateForm();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bob.GiveCash(10);
+            joe.ReceiveCash(10);
+            UpdateForm();
+        }
     }
 
     class guy

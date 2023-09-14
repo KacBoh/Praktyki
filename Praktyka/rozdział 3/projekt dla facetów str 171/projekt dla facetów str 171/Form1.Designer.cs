@@ -33,6 +33,8 @@
             BankCash = new Label();
             Receive = new Button();
             Give = new Button();
+            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // JoeCash
@@ -75,7 +77,7 @@
             // 
             // Give
             // 
-            Give.Location = new Point(32, 213);
+            Give.Location = new Point(188, 164);
             Give.Name = "Give";
             Give.Size = new Size(150, 29);
             Give.TabIndex = 4;
@@ -83,11 +85,33 @@
             Give.UseVisualStyleBackColor = true;
             Give.Click += Give_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(32, 200);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 29);
+            button1.TabIndex = 5;
+            button1.Text = "Joe daje bobowi";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(188, 200);
+            button2.Name = "button2";
+            button2.Size = new Size(150, 29);
+            button2.TabIndex = 6;
+            button2.Text = "Bob daje Joe";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(226, 283);
+            ClientSize = new Size(365, 243);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(Give);
             Controls.Add(Receive);
             Controls.Add(BankCash);
@@ -107,5 +131,7 @@
         private Label BankCash;
         private Button Receive;
         private Button Give;
+        private Button button1;
+        private Button button2;
     }
 }
