@@ -1,0 +1,28 @@
+﻿<Window x:Class="zmiana_etykiety.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zmiana_etykiety"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFA00707"/>
+                <GradientStop Color="#FF2E3198" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="Zmień etykietę" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="30" FontSize="14" Click="button1_Click" Background="{x:Null}" Foreground="White"/>
+        <CheckBox x:Name="box" Grid.Column="1" Content="Włącz/Wyłącz zmianę" HorizontalAlignment="Center" VerticalAlignment="Center" Width="176" Height="30" FontSize="16" Checked="Checkbox_Checked" Background="White" BorderBrush="White" Foreground="White"/>
+        <TextBlock x:Name="Label" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="Etykieta do zmiany" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="500" Height="30" FontSize="25" TextAlignment="Center" Foreground="White"/>
+    </Grid>
+</Window>
