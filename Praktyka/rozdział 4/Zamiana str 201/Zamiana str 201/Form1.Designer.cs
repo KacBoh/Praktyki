@@ -53,6 +53,7 @@
             przycisk2.TabIndex = 1;
             przycisk2.Text = "Lucinda";
             przycisk2.UseVisualStyleBackColor = true;
+            przycisk2.Click += przycisk2_Click;
             // 
             // zamiana
             // 
@@ -63,6 +64,7 @@
             zamiana.TabIndex = 2;
             zamiana.Text = "Zamiana";
             zamiana.UseVisualStyleBackColor = true;
+            zamiana.Click += zamiana_Click;
             // 
             // Form1
             // 
@@ -72,8 +74,10 @@
             Controls.Add(zamiana);
             Controls.Add(przycisk2);
             Controls.Add(przycisk1);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Zamiana";
             ResumeLayout(false);
         }
 
