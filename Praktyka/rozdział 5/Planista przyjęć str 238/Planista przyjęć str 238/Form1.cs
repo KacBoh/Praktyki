@@ -6,6 +6,7 @@ namespace Planista_przyjęć_str_238
         public Form1()
         {
             InitializeComponent();
+            Koszt.Text = Convert.ToString(impreza.CalculateCost(false, false));
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
