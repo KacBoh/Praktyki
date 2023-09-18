@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // label1
@@ -93,11 +95,17 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1;
+            timer1.Tick += timer1_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 184);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -118,5 +126,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private System.Windows.Forms.Timer timer1;
     }
 }
