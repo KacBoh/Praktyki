@@ -29,7 +29,7 @@ namespace Planista_przyjęć_str_238
                 suma = suma * 0.95M;
             }
             else suma += 20 * NumberOfPeople;
-
+             
             return suma;
         }
 
