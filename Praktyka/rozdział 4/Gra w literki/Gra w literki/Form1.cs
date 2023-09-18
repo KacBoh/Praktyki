@@ -27,8 +27,13 @@
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
-        { 
-            if (listBox1.Items.Contains(e.KeyCode)) 
+        {
+            
+        }
+
+        private void listBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (listBox1.Items.Contains(e.KeyCode))
             {
                 listBox1.Items.Remove(e.KeyCode);
                 listBox1.Refresh();

@@ -53,6 +53,7 @@
             listBox1.Size = new Size(800, 190);
             listBox1.TabIndex = 0;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            listBox1.KeyDown += listBox1_KeyDown;
             // 
             // statusStrip1
             // 
