@@ -7,11 +7,20 @@ using System.Threading.Tasks.Dataflow;
 
 namespace zarządzane_ulem
 {
-    public class Worker
+    public class Worker : Bee
     {
-        public Worker(string[] jobsICanDo) 
+        public Worker(string[] jobsICanDo, double weightMg ): base(weightMg) 
         {
             this.jobsICanDo = jobsICanDo;
+        }
+
+        const double honeyUnitsPerShiftWorked = .65;
+
+        public override double HoneyUnitConsumtionRate()
+        {
+            double consumption = base.HoneyUnitConsumtionRate();
+            consumption += ShiftsWorked * honeyUnitsPerShiftWorked;
+            return consumption;
         }
 
         public int ShiftLeft

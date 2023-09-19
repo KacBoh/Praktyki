@@ -6,12 +6,12 @@ namespace zarządzane_ulem
         {
             InitializeComponent();
             Worker[] workers = new Worker[4];
-            workers[0] = new Worker(new string[] { "Zbieranie nektaru", "Wytwarzanie miodu" });
-            workers[1] = new Worker(new string[] { "Pielęgnacja jaj", "Nauczanie pszczółek" });
-            workers[2] = new Worker(new string[] { "Utrzymywanie ula", "Wytwarzanie miodu" });
-            workers[3] = new Worker(new string[] { "Zbieranie nektaru", "Wytwarzanie miodu", "Patrol z żądłami" });
+            workers[0] = new Worker(new string[] { "Zbieranie nektaru", "Wytwarzanie miodu" }, 175);
+            workers[1] = new Worker(new string[] { "Pielęgnacja jaj", "Nauczanie pszczółek" }, 152);
+            workers[2] = new Worker(new string[] { "Utrzymywanie ula", "Wytwarzanie miodu" }, 114);
+            workers[3] = new Worker(new string[] { "Zbieranie nektaru", "Wytwarzanie miodu", "Patrol z żądłami" }, 210);
 
-            queen = new Queen(workers);
+            queen = new Queen(workers , 275);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace zarządzane_ulem
 {
-    public class Queen
+    public class Queen : Bee
     {
-        public Queen(Worker[] workers) 
+        public Queen(Worker[] workers, double weightMg) : base(weightMg)
         {
             this.workers = workers;
 
@@ -31,10 +31,12 @@ namespace zarządzane_ulem
 
         public string WorkTheNextShift()
         {
+            double honeyConsumed = HoneyUnitConsumtionRate();
             shiftNumber++;
             string report = "Report zmiany nr: " + shiftNumber + "\r\n";
             for (int i = 0; i < workers.Length; i++)
             {
+                honeyConsumed += workers[i].HoneyUnitConsumtionRate();
                 if (workers[i].DidYouFinish())
                     report += "Robotnica nr: " + (i + 1) + " zakończyła swoje zadanie \r\n";
                 if (String.IsNullOrEmpty(workers[i].CurrentJob))
@@ -44,6 +46,8 @@ namespace zarządzane_ulem
                     report += "Robotnica nr: " + (i + 1) + " robi " + workers[i].CurrentJob + " jeszcze przez " + workers[i].ShiftLeft + " zmiany \r\n";
                 else report += "Robotnica nr: " + (i + 1) + " zakończy " + workers[i].CurrentJob + " po tej zmianie \r\n";
             }
+            report += "Całkowite spożycie miodu: " + honeyConsumed + " jednostek \r\n";
+
             return report;
         }
 
