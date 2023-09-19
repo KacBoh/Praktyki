@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zarządzane ulem", "zarządzane ulem\zarządzane ulem.csproj", "{45EBA196-E754-4C83-8A16-9B24ECB242AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45EBA196-E754-4C83-8A16-9B24ECB242AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EBA196-E754-4C83-8A16-9B24ECB242AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EBA196-E754-4C83-8A16-9B24ECB242AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EBA196-E754-4C83-8A16-9B24ECB242AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A568DB7-79E5-41F5-A443-3B4A29F35E5D}
+	EndGlobalSection
+EndGlobal
