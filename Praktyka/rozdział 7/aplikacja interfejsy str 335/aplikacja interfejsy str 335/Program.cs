@@ -24,6 +24,11 @@ namespace aplikacja_interfejsy_str_335
             TallGuy tallGuy = new TallGuy() { Height = 74, Name = "Adam" };
             tallGuy.TalkAboutYourself();
             tallGuy.Honk();
+            ScaryScary fingersTheClown = new ScaryScary("Duże buty", 35);
+            FunnyFunny someFunnyClown = fingersTheClown;
+            IScaryClown someOtherScaryClown = someFunnyClown as ScaryScary;
+            someOtherScaryClown.Honk();
+            Console.ReadLine();
         }
     }
 }
