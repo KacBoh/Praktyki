@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Diagnostics.Tracing;
+using System.Xml.Serialization;
 
 namespace Dom_str_368
 {
@@ -9,9 +10,11 @@ namespace Dom_str_368
         RoomWithDoor livingRoom;
         Room diningRoom;
         RoomWithDoor kitchen;
+        Room bathroom;
 
         OutsideWithDoor frontYard;
         OutsideWithDoor backYard;
+        Outside pool;
         Outside garden;
         public Form1()
         {
@@ -25,10 +28,12 @@ namespace Dom_str_368
             livingRoom = new RoomWithDoor("Salon", "antyczny dywan", "dębowe dziwi z mosiężną klamką");
             diningRoom = new Room("Jadalnia", "kryształowy żyrandol");
             kitchen = new RoomWithDoor("Kuchnia", "sztućce", "rozsuwane dzwi");
+            bathroom = new Room("Łazienka", "wanna");
 
             frontYard = new OutsideWithDoor("Podwórko przed domem", false, "dębowe drzwi");
             backYard = new OutsideWithDoor("Podwórko za domem", true, "rozsuwane dzwi");
             garden = new Outside("Ogród", false);
+            pool = new Outside("basen", false);
 
             diningRoom.Exits = new Location[] { livingRoom, kitchen };
             livingRoom.Exits = new Location[] { diningRoom };
@@ -36,6 +41,8 @@ namespace Dom_str_368
             frontYard.Exits = new Location[] { backYard, garden };
             backYard.Exits = new Location[] { frontYard, garden };
             garden.Exits = new Location[] { backYard, frontYard };
+            bathroom.Exits = new Location[] { livingRoom };
+            pool.Exits = new Location[] {garden };
 
             livingRoom.DoorLocation = frontYard;
             frontYard.DoorLocation = livingRoom;
