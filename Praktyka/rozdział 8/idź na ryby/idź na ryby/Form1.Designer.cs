@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            Name = new TextBox();
+            listHand = new ListBox();
+            textName = new TextBox();
             buttonStart = new Button();
             textProgress = new TextBox();
-            textBox1 = new TextBox();
+            textBooks = new TextBox();
             buttonAsk = new Button();
             SuspendLayout();
             // 
-            // listBox1
+            // listHand
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(398, 11);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(159, 304);
-            listBox1.TabIndex = 0;
+            listHand.FormattingEnabled = true;
+            listHand.ItemHeight = 20;
+            listHand.Location = new Point(398, 11);
+            listHand.Name = "listHand";
+            listHand.Size = new Size(159, 304);
+            listHand.TabIndex = 0;
             // 
-            // Name
+            // textName
             // 
-            Name.Location = new Point(12, 12);
-            Name.Name = "Name";
-            Name.Size = new Size(175, 27);
-            Name.TabIndex = 1;
+            textName.Location = new Point(12, 12);
+            textName.Name = "textName";
+            textName.Size = new Size(175, 27);
+            textName.TabIndex = 1;
+            textName.Text = "Form1";
             // 
             // buttonStart
             // 
@@ -60,6 +61,7 @@
             buttonStart.TabIndex = 2;
             buttonStart.Text = "Rozpocznij grę";
             buttonStart.UseVisualStyleBackColor = true;
+            buttonStart.Click += buttonStart_Click;
             // 
             // textProgress
             // 
@@ -70,15 +72,15 @@
             textProgress.Size = new Size(379, 212);
             textProgress.TabIndex = 3;
             // 
-            // textBox1
+            // textBooks
             // 
-            textBox1.Location = new Point(12, 265);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(380, 85);
-            textBox1.TabIndex = 4;
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBooks.Location = new Point(12, 265);
+            textBooks.Multiline = true;
+            textBooks.Name = "textBooks";
+            textBooks.ReadOnly = true;
+            textBooks.Size = new Size(380, 85);
+            textBooks.TabIndex = 4;
+            textBooks.TextChanged += textBox1_TextChanged;
             // 
             // buttonAsk
             // 
@@ -93,13 +95,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(569, 361);
             Controls.Add(buttonAsk);
-            Controls.Add(textBox1);
+            Controls.Add(textBooks);
             Controls.Add(textProgress);
             Controls.Add(buttonStart);
-            Controls.Add(Name);
-            Controls.Add(listBox1);
+            Controls.Add(textName);
+            Controls.Add(listHand);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -108,11 +110,11 @@
 
         #endregion
 
-        private ListBox listBox1;
-        private TextBox Name;
+        private ListBox listHand;
+        private TextBox textName;
         private Button buttonStart;
         private TextBox textProgress;
-        private TextBox textBox1;
+        private TextBox textBooks;
         private Button buttonAsk;
     }
 }
