@@ -90,6 +90,7 @@
             buttonAsk.TabIndex = 5;
             buttonAsk.Text = "button1";
             buttonAsk.UseVisualStyleBackColor = true;
+            buttonAsk.Click += buttonAsk_Click_1;
             // 
             // Form1
             // 

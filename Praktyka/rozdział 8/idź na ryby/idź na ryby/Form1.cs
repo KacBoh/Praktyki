@@ -31,7 +31,7 @@ namespace idź_na_ryby
         private void UpdateForm()
         {
             listHand.Items.Clear();
-            foreach (String cardName in game.GetPlayerCardNames()) 
+            foreach (String cardName in game.GetPlayerCardNames())
                 listHand.Items.Add(cardName);
             textBooks.Text = game.DescribeBooks();
             textProgress.Text += game.DescribePlayerHands();
@@ -40,6 +40,23 @@ namespace idź_na_ryby
         }
 
         private void buttonAsk_Click(object sender, EventArgs e)
+        {
+            textProgress.Text = "";
+            if (listHand.SelectedIndex < 0)
+            {
+                MessageBox.Show("Wybierz kartę");
+                return;
+            }
+            if (game.PlayOneRound(listHand.SelectedIndex))
+            {
+                textProgress.Text += "Zwyciezcą jest... " + game.GetWinnerName();
+                textBooks.Text = game.DescribeBooks();
+                buttonAsk.Enabled = false;
+            }
+            else UpdateForm();
+        }
+
+        private void buttonAsk_Click_1(object sender, EventArgs e)
         {
             textProgress.Text = "";
             if (listHand.SelectedIndex < 0)
