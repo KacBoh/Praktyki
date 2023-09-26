@@ -5,8 +5,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using U_niechlujniego_Janka_2._0;
 
-namespace Bar_Niechlujny_Janek_str_207
+namespace U_niechlujniego_Janka_2._0
 {
     internal class MenuMaker
     {
@@ -17,7 +18,7 @@ namespace Bar_Niechlujny_Janek_str_207
         private List<String> Breads = new List<String>() { "Chleb ryżowy", "Chleb biały", "Chleb zbożowy", "Bułka" };
         public ObservableCollection<MenuItem> Menu { get; private set; }
 
-        public DateTime GeneratedDate { get; private set; } 
+        public DateTime GeneratedDate { get; set; } 
         public int NumberOfItems { get; set; }
 
         public MenuMaker() 
@@ -26,13 +27,13 @@ namespace Bar_Niechlujny_Janek_str_207
             NumberOfItems = 10;
         }
 
-        public string CreateMenuItem()
+        public MenuItem CreateMenuItem()
         {
 
             string randomMeat = Meats[Randomizer.Next(Meats.Count)];
             string randomCondiment = Condiments[Randomizer.Next(Condiments.Count)];
             string randomBread = Breads[Randomizer.Next(Breads.Count)];
-            return randomMeat + ", " + randomCondiment + ", " + randomBread;
+            return new MenuItem(randomBread, randomMeat, randomCondiment);
         }
 
         public void UpdateMenu()

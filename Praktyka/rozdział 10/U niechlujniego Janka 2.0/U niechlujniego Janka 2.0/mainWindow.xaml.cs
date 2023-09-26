@@ -1,4 +1,4 @@
-﻿using Bar_Niechlujny_Janek_str_207;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
