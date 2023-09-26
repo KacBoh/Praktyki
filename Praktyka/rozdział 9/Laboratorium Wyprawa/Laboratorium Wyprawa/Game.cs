@@ -10,7 +10,7 @@ namespace Laboratorium_Wyprawa
 {
     class Game
     {
-        public IEnumerable<Enemy> Enemies { get; private set; }
+        public List<Enemy> Enemies { get; private set; }
         public Weapon WeaponInRoo { get; private set; }
 
         public Player player;
@@ -26,7 +26,7 @@ namespace Laboratorium_Wyprawa
         public Game(Rectangle boundaries)
         {
             this.boundaries = boundaries;
-            Player = new player(this, new Point(boundaries.Left + 10, boundaries.Top + 70));
+            player = new Player(this, new Point(boundaries.Left + 10, boundaries.Top + 70));
         }
 
         public void Move(Direction direction, Random random)
@@ -43,7 +43,7 @@ namespace Laboratorium_Wyprawa
 
         public bool CheckPlayerInventory(string weaponName)
         {
-            return player.CheckPlayerInventory(weaponName);
+            return player.Weapons.Contains(weaponName);
         }
 
         public void HitPlayer(int maxDamage, Random random)
@@ -79,7 +79,56 @@ namespace Laboratorium_Wyprawa
                     Enemies.Add(new Bat(this, GetRandomLocation(random)));
                     WeaponInRoom = new Sword(this, GetRandomLocation(random));
                     break;
+                case 2:
+                    Enemies = new List<Enemy>();
+                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
+                    WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
+                    break;
+
+                case 3:
+                    Enemies = new List<Enemy>();
+                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    WeaponInRoom = new Bow(this, GetRandomLocation(random));
+                    break;
+                case 4:
+                    Enemies = new List<Enemy>();
+                    Enemies.Add(new Bat(this, GetRandomLocation(random)));
+                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
+                    if (!player.Weapons.Contains("Łuk"))
+                        WeaponInRoom = new Bow(this, GetRandomLocation(random));
+                    else
+                        WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
+                    break;
+                case 5:
+                    Enemies = new List<Enemy>();
+                    Enemies.Add(new Bat(this, GetRandomLocation(random)));
+                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
+                    break;
+                case 6:
+                    Enemies = new List<Enemy>();
+                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
+                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    WeaponInRoom = new Mace(this, GetRandomLocation(random));
+                    break;
+                case 7:
+                    Enemies = new List<Enemy>();
+                    Enemies.Add(new Bat(this, GetRandomLocation(random)));
+                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
+                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    if (!player.Weapons.Contains("Buława"))
+                        WeaponInRoom = new Mace(this, GetRandomLocation(random));
+                    else
+                        WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
+                    break;
+                case 8:
+                    MessageBox.Show("koniec gry");
+                    Application.Exit();
+                    break;
             }
+            return level;
+
         }
+    }
     }
 }

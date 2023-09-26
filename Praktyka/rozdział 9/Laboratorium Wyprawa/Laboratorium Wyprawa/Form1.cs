@@ -16,19 +16,19 @@ namespace Laboratorium_Wyprawa
 
         public void UpdateCharacters()
         {
-            Player.Location = game.PlayerLocation;
+            picPlayer.Location = game.PlayerLocation;
             playerHitPoits.Text = game.PlayerHitPoints.ToString();
             bool showBat = false;
             bool showGhost = false;
             bool showGhoul = false;
             int enemiesShown = 0;
 
-            foreach (Enemy enemy in game.enemies)
+            foreach (Enemy enemy in game.Enemies)
             {
                 if (enemy is Bat)
                 {
                     picBat.Location = enemy.Location;
-                    batHitPoints.Text = enemy.HitPoints.ToString();
+                    batlabe.Text = enemy.HitPoints.ToString();
                     if (enemy.HitPoints > 0)
                     {
                         showBat = true;
@@ -102,7 +102,7 @@ namespace Laboratorium_Wyprawa
                 weaponControl.Visible = true;
 
 
-            if (game.playerHitPoints <= 0)
+            if (game.PlayerHitPoints <= 0)
             {
                 MessageBox.Show("zosta³eœ zabity");
                 Application.Exit();
@@ -120,7 +120,7 @@ namespace Laboratorium_Wyprawa
 
             }
         }
-    }
+
         public Form1()
         {
             InitializeComponent();

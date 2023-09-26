@@ -39,20 +39,20 @@
             picBow = new PictureBox();
             picSword = new PictureBox();
             picMace = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox15 = new PictureBox();
+            inventorySword = new PictureBox();
+            inventoryBow = new PictureBox();
+            inventoryMace = new PictureBox();
+            inventoryBluePotion = new PictureBox();
+            inventoryRedPotion = new PictureBox();
             tableLayoutPanel1 = new TableLayoutPanel();
             playerHitPoits = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            batHitPoints = new Label();
+            Ghostlabel = new Label();
+            ghostHitPoints = new Label();
             label7 = new Label();
-            label8 = new Label();
-            label1 = new Label();
-            label3 = new Label();
+            ghoulHitPoints = new Label();
+            label = new Label();
+            batlabe = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -73,11 +73,11 @@
             ((System.ComponentModel.ISupportInitialize)picBow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picSword).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picMace).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)inventorySword).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryBow).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryMace).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryBluePotion).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryRedPotion).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -186,50 +186,55 @@
             picMace.TabIndex = 9;
             picMace.TabStop = false;
             // 
-            // pictureBox11
+            // inventorySword
             // 
-            pictureBox11.BackColor = Color.White;
-            pictureBox11.Location = new Point(79, 320);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(50, 50);
-            pictureBox11.TabIndex = 10;
-            pictureBox11.TabStop = false;
+            inventorySword.BackColor = Color.White;
+            inventorySword.Image = (Image)resources.GetObject("inventorySword.Image");
+            inventorySword.Location = new Point(79, 320);
+            inventorySword.Name = "inventorySword";
+            inventorySword.Size = new Size(50, 50);
+            inventorySword.TabIndex = 10;
+            inventorySword.TabStop = false;
             // 
-            // pictureBox12
+            // inventoryBow
             // 
-            pictureBox12.BackColor = Color.White;
-            pictureBox12.Location = new Point(135, 320);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(50, 50);
-            pictureBox12.TabIndex = 11;
-            pictureBox12.TabStop = false;
+            inventoryBow.BackColor = Color.White;
+            inventoryBow.Image = (Image)resources.GetObject("inventoryBow.Image");
+            inventoryBow.Location = new Point(135, 320);
+            inventoryBow.Name = "inventoryBow";
+            inventoryBow.Size = new Size(50, 50);
+            inventoryBow.TabIndex = 11;
+            inventoryBow.TabStop = false;
             // 
-            // pictureBox13
+            // inventoryMace
             // 
-            pictureBox13.BackColor = Color.White;
-            pictureBox13.Location = new Point(191, 320);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(50, 50);
-            pictureBox13.TabIndex = 12;
-            pictureBox13.TabStop = false;
+            inventoryMace.BackColor = Color.White;
+            inventoryMace.Image = (Image)resources.GetObject("inventoryMace.Image");
+            inventoryMace.Location = new Point(191, 320);
+            inventoryMace.Name = "inventoryMace";
+            inventoryMace.Size = new Size(50, 50);
+            inventoryMace.TabIndex = 12;
+            inventoryMace.TabStop = false;
             // 
-            // pictureBox14
+            // inventoryBluePotion
             // 
-            pictureBox14.BackColor = Color.White;
-            pictureBox14.Location = new Point(247, 320);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(50, 50);
-            pictureBox14.TabIndex = 13;
-            pictureBox14.TabStop = false;
+            inventoryBluePotion.BackColor = Color.White;
+            inventoryBluePotion.Image = (Image)resources.GetObject("inventoryBluePotion.Image");
+            inventoryBluePotion.Location = new Point(247, 320);
+            inventoryBluePotion.Name = "inventoryBluePotion";
+            inventoryBluePotion.Size = new Size(50, 50);
+            inventoryBluePotion.TabIndex = 13;
+            inventoryBluePotion.TabStop = false;
             // 
-            // pictureBox15
+            // inventoryRedPotion
             // 
-            pictureBox15.BackColor = Color.White;
-            pictureBox15.Location = new Point(303, 320);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(50, 50);
-            pictureBox15.TabIndex = 14;
-            pictureBox15.TabStop = false;
+            inventoryRedPotion.BackColor = Color.White;
+            inventoryRedPotion.Image = (Image)resources.GetObject("inventoryRedPotion.Image");
+            inventoryRedPotion.Location = new Point(303, 320);
+            inventoryRedPotion.Name = "inventoryRedPotion";
+            inventoryRedPotion.Size = new Size(50, 50);
+            inventoryRedPotion.TabIndex = 14;
+            inventoryRedPotion.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -238,13 +243,13 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(playerHitPoits, 1, 0);
-            tableLayoutPanel1.Controls.Add(label4, 1, 1);
-            tableLayoutPanel1.Controls.Add(label5, 0, 2);
-            tableLayoutPanel1.Controls.Add(label6, 1, 2);
+            tableLayoutPanel1.Controls.Add(batHitPoints, 1, 1);
+            tableLayoutPanel1.Controls.Add(Ghostlabel, 0, 2);
+            tableLayoutPanel1.Controls.Add(ghostHitPoints, 1, 2);
             tableLayoutPanel1.Controls.Add(label7, 0, 3);
-            tableLayoutPanel1.Controls.Add(label8, 1, 3);
-            tableLayoutPanel1.Controls.Add(label1, 0, 0);
-            tableLayoutPanel1.Controls.Add(label3, 0, 1);
+            tableLayoutPanel1.Controls.Add(ghoulHitPoints, 1, 3);
+            tableLayoutPanel1.Controls.Add(label, 0, 0);
+            tableLayoutPanel1.Controls.Add(batlabe, 0, 1);
             tableLayoutPanel1.Location = new Point(606, 1);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
@@ -263,32 +268,32 @@
             playerHitPoits.Size = new Size(0, 20);
             playerHitPoits.TabIndex = 1;
             // 
-            // label4
+            // batHitPoints
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(100, 22);
-            label4.Name = "label4";
-            label4.Size = new Size(50, 20);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
+            batHitPoints.AutoSize = true;
+            batHitPoints.Location = new Point(100, 22);
+            batHitPoints.Name = "batHitPoints";
+            batHitPoints.Size = new Size(50, 20);
+            batHitPoints.TabIndex = 3;
+            batHitPoints.Text = "label4";
             // 
-            // label5
+            // Ghostlabel
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(3, 48);
-            label5.Name = "label5";
-            label5.Size = new Size(50, 20);
-            label5.TabIndex = 4;
-            label5.Text = "label5";
+            Ghostlabel.AutoSize = true;
+            Ghostlabel.Location = new Point(3, 48);
+            Ghostlabel.Name = "Ghostlabel";
+            Ghostlabel.Size = new Size(50, 20);
+            Ghostlabel.TabIndex = 4;
+            Ghostlabel.Text = "label5";
             // 
-            // label6
+            // ghostHitPoints
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(100, 48);
-            label6.Name = "label6";
-            label6.Size = new Size(50, 20);
-            label6.TabIndex = 5;
-            label6.Text = "label6";
+            ghostHitPoints.AutoSize = true;
+            ghostHitPoints.Location = new Point(100, 48);
+            ghostHitPoints.Name = "ghostHitPoints";
+            ghostHitPoints.Size = new Size(50, 20);
+            ghostHitPoints.TabIndex = 5;
+            ghostHitPoints.Text = "label6";
             // 
             // label7
             // 
@@ -299,32 +304,32 @@
             label7.TabIndex = 6;
             label7.Text = "label7";
             // 
-            // label8
+            // ghoulHitPoints
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(100, 72);
-            label8.Name = "label8";
-            label8.Size = new Size(50, 20);
-            label8.TabIndex = 7;
-            label8.Text = "label8";
+            ghoulHitPoints.AutoSize = true;
+            ghoulHitPoints.Location = new Point(100, 72);
+            ghoulHitPoints.Name = "ghoulHitPoints";
+            ghoulHitPoints.Size = new Size(50, 20);
+            ghoulHitPoints.TabIndex = 7;
+            ghoulHitPoints.Text = "label8";
             // 
-            // label1
+            // label
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(68, 20);
-            label1.TabIndex = 0;
-            label1.Text = "PlayerHP";
+            label.AutoSize = true;
+            label.Location = new Point(3, 0);
+            label.Name = "label";
+            label.Size = new Size(68, 20);
+            label.TabIndex = 0;
+            label.Text = "PlayerHP";
             // 
-            // label3
+            // batlabe
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(3, 22);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
+            batlabe.AutoSize = true;
+            batlabe.Location = new Point(3, 22);
+            batlabe.Name = "batlabe";
+            batlabe.Size = new Size(50, 20);
+            batlabe.TabIndex = 2;
+            batlabe.Text = "label3";
             // 
             // button1
             // 
@@ -435,12 +440,12 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(tableLayoutPanel1);
-            Controls.Add(pictureBox15);
-            Controls.Add(pictureBox14);
-            Controls.Add(pictureBox13);
-            Controls.Add(pictureBox12);
+            Controls.Add(inventoryRedPotion);
+            Controls.Add(inventoryBluePotion);
+            Controls.Add(inventoryMace);
+            Controls.Add(inventoryBow);
             Controls.Add(picPlayer);
-            Controls.Add(pictureBox11);
+            Controls.Add(inventorySword);
             Controls.Add(picMace);
             Controls.Add(picSword);
             Controls.Add(picBow);
@@ -462,11 +467,11 @@
             ((System.ComponentModel.ISupportInitialize)picBow).EndInit();
             ((System.ComponentModel.ISupportInitialize)picSword).EndInit();
             ((System.ComponentModel.ISupportInitialize)picMace).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)inventorySword).EndInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryBow).EndInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryMace).EndInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryBluePotion).EndInit();
+            ((System.ComponentModel.ISupportInitialize)inventoryRedPotion).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
@@ -485,20 +490,20 @@
         private PictureBox picBow;
         private PictureBox picSword;
         private PictureBox picMace;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox15;
+        private PictureBox inventorySword;
+        private PictureBox inventoryBow;
+        private PictureBox inventoryMace;
+        private PictureBox inventoryBluePotion;
+        private PictureBox inventoryRedPotion;
         private TableLayoutPanel tableLayoutPanel1;
-        private Label label1;
+        private Label label;
         private Label playerHitPoits;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Label batHitPoints;
+        private Label Ghostlabel;
+        private Label ghostHitPoints;
         private Label label7;
-        private Label label8;
-        private Label label3;
+        private Label ghoulHitPoints;
+        private Label batlabe;
         private Button button1;
         private Button button2;
         private Button button3;
