@@ -46,7 +46,7 @@ namespace Laboratorium_Wyprawa
             return player.CheckPlayerInventory(weaponName);
         }
 
-        public bool HitPlayer(int maxDamage, Random random)
+        public void HitPlayer(int maxDamage, Random random)
         {
             player.Hit(maxDamage, random);
         }
