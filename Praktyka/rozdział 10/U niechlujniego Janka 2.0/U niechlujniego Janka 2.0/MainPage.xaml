@@ -9,6 +9,28 @@
       Title="MainPage">
 
     <Grid>
+        <StackPanel Grid.Row="1" Margin="120,0" x:Name="pageLayoutStackpanel">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                <StackPanel Margin="0,0,20,0">
+                    <TextBlock  Text="Wielkość Menu" Margin="0,0,0,10"/>
+                    <TextBlock Width="100" HorizontalAlignment="Left" Text="{Binding NumberOfItems, Mode=TwoWay}"/>
+                </StackPanel>
+                <Button x:Name="NewMenu" VerticalAlignment="Bottom" Click="newMenu_Click" Content="Wygeneruj nowe Menu" Margin="0,0,20,0"/>
+                
+            </StackPanel>
+                <ListView ItemsSource="{Binding Menu}" Margin="0,0,20,0"/>
+                <TextBlock >
+                    <Run Text="Data Generacji menu:"/>
+                    <Run Text="{Binding GeneratedDate}"/>
+                </TextBlock>
+                
+                
+            </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
         
     </Grid>
 </Page>

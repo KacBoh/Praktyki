@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace U_niechlujniego_Janka_2._0
 {
-    internal class MenuItem
+    class MenuItem
     {
         public string Meat { get; private set; }
         public string Condiment { get; private set; }

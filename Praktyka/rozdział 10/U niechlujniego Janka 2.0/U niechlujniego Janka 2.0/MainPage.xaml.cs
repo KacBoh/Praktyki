@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bar_Niechlujny_Janek_str_207;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace U_niechlujniego_Janka_2._0
     /// </summary>
     public partial class MainPage : Page
     {
+        MenuMaker menuMaker = new MenuMaker();
         public MainPage()
         {
             InitializeComponent();
+
+            pageLayoutStackpanel.DataContext = menuMaker;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            menuMaker.UpdateMenu();
         }
     }
 }
