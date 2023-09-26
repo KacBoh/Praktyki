@@ -9,15 +9,16 @@ namespace Laboratorium_Wyprawa
 {
     abstract class Weapon : Mover
     {
-        public bool Pickedup { get; private set; }
+        private bool pickedUp;
+        public bool PickedUp { get { return PickedUp; } }
         public Weapon(Game game, Point location) : base(game, location)
         {
-            Pickedup = false;
+            pickedUp = false;
         }
 
         public void PickUpWeapon()
         {
-            Pickedup = true;
+            pickedUp = true;
         }
 
         public abstract string Name { get; }

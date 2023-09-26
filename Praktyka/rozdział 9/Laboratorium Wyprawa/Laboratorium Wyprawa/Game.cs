@@ -11,7 +11,7 @@ namespace Laboratorium_Wyprawa
     class Game
     {
         public List<Enemy> Enemies { get; private set; }
-        public Weapon WeaponInRoo { get; private set; }
+        public Weapon WeaponInRoom { get; private set; }
 
         public Player player;
         public Point PlayerLocation { get {  return player.Location; } }
@@ -126,9 +126,10 @@ namespace Laboratorium_Wyprawa
                     Application.Exit();
                     break;
             }
-            return level;
+            
 
         }
     }
-    }
+
 }
+

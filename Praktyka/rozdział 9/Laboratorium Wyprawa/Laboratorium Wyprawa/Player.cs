@@ -12,12 +12,12 @@ namespace Laboratorium_Wyprawa
 
         public int HitPoints { get; private set; }
 
-        public List<Weapon> inventory = new Listy<Weapon>();
-        public IEnumerable<string> Weapons
+        public List<Weapon> inventory = new List<Weapon>();
+        public List<string> Weapons
         {
             get
             {
-                List<strign> names = new List<strign>();
+                List<string> names = new List<string>();
                 foreach (Weapon weapon in inventory)
                 {
                     names.Add(weapon.Name);
@@ -31,7 +31,12 @@ namespace Laboratorium_Wyprawa
             HitPoints = 10;
         }
 
-        public void IncreaseHealth(int health, Random random)
+        public void Hit(int maxDamage, Random random)
+        {
+            HitPoints -= random.Next(1, maxDamage);
+        }
+
+            public void IncreaseHealth(int health, Random random)
         {
             HitPoints += random.Next(1, health);
         }
@@ -71,7 +76,7 @@ namespace Laboratorium_Wyprawa
             }
             if (equippedWeapon is IPotion)
             {
-                Invetory.Remove(equippedWeapon);
+                inventory.Remove(equippedWeapon);
                 equippedWeapon=null;
             }
         }

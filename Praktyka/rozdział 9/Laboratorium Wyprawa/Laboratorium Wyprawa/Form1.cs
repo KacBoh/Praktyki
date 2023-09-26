@@ -111,12 +111,12 @@ namespace Laboratorium_Wyprawa
             if (enemiesShown < 1)
             {
                 MessageBox.Show("Pokona³eœ przeciwników na tym poziomie");
-                if (game.NewLevel(random) == 8)
-                {
-                    Application.Exit();
-                }
-                else
-                    UpdateCharacters();
+                //if (game.NewLevel(random) == 8)
+                // {
+                //   Application.Exit();
+                // }
+                // else
+                UpdateCharacters();
 
             }
         }
@@ -138,7 +138,101 @@ namespace Laboratorium_Wyprawa
 
         private void button2_Click(object sender, EventArgs e)
         {
+            game.Move(Direction.Down, random);
+            UpdateCharacters();
+        }
+
+        private void moveUP_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Up, random);
+            UpdateCharacters();
 
         }
+
+        private void moveRight_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Right, random);
+            UpdateCharacters();
+        }
+
+        private void moveLeft_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Left, random);
+            UpdateCharacters();
+        }
+
+        private void attackUp_Click(object sender, EventArgs e)
+        {
+
+            game.Move(Direction.Up, random);
+            UpdateCharacters();
+        }
+
+        private void attackRight_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Right, random);
+            UpdateCharacters();
+
+        }
+
+        private void attackDown_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Down, random);
+            UpdateCharacters();
+        }
+
+        private void attackLeft_Click(object sender, EventArgs e)
+        {
+            game.Move(Direction.Left, random);
+            UpdateCharacters();
+        }
+
+        private void inventorySword_Click(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Miecz"))
+            {
+                game.Equip("Miecz");
+                inventorySword.BorderStyle = BorderStyle.Fixed3D;
+            }
+        }
+
+        private void inventoryBow_Click(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("£uk"))
+            {
+                game.Equip("£uk");
+                inventoryBow.BorderStyle = BorderStyle.Fixed3D;
+            }
+        }
+
+        private void inventoryMace_Click(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Bu³awa"))
+            {
+                game.Equip("Bu³awa");
+                inventoryMace.BorderStyle = BorderStyle.Fixed3D;
+            }
+        }
+
+        private void inventoryBluePotion_Click(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Niebieska mikstura"))
+            {
+                game.Equip("Niebieska mikstura");
+                inventoryBluePotion.BorderStyle = BorderStyle.Fixed3D;
+            }
+        }
+
+        private void inventoryRedPotion_Click(object sender, EventArgs e)
+        {
+            if (game.CheckPlayerInventory("Czerwona mikstura"))
+            {
+                game.Equip("Czerwona mikstura");
+                inventoryRedPotion.BorderStyle = BorderStyle.Fixed3D;
+            }
+        }
+
+
+
     }
 }

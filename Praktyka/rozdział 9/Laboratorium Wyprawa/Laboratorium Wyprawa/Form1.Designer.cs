@@ -53,14 +53,14 @@
             ghoulHitPoints = new Label();
             label = new Label();
             batlabe = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            moveUP = new Button();
+            moveDown = new Button();
+            moveLeft = new Button();
+            moveRight = new Button();
+            attackRight = new Button();
+            attackLeft = new Button();
+            attackDown = new Button();
+            attackUp = new Button();
             label9 = new Label();
             label10 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -195,6 +195,7 @@
             inventorySword.Size = new Size(50, 50);
             inventorySword.TabIndex = 10;
             inventorySword.TabStop = false;
+            inventorySword.Click += inventorySword_Click;
             // 
             // inventoryBow
             // 
@@ -205,6 +206,7 @@
             inventoryBow.Size = new Size(50, 50);
             inventoryBow.TabIndex = 11;
             inventoryBow.TabStop = false;
+            inventoryBow.Click += inventoryBow_Click;
             // 
             // inventoryMace
             // 
@@ -215,6 +217,7 @@
             inventoryMace.Size = new Size(50, 50);
             inventoryMace.TabIndex = 12;
             inventoryMace.TabStop = false;
+            inventoryMace.Click += inventoryMace_Click;
             // 
             // inventoryBluePotion
             // 
@@ -225,16 +228,18 @@
             inventoryBluePotion.Size = new Size(50, 50);
             inventoryBluePotion.TabIndex = 13;
             inventoryBluePotion.TabStop = false;
+            inventoryBluePotion.Click += inventoryBluePotion_Click;
             // 
             // inventoryRedPotion
             // 
-            inventoryRedPotion.BackColor = Color.White;
+            inventoryRedPotion.BackColor = Color.Transparent;
             inventoryRedPotion.Image = (Image)resources.GetObject("inventoryRedPotion.Image");
             inventoryRedPotion.Location = new Point(303, 320);
             inventoryRedPotion.Name = "inventoryRedPotion";
             inventoryRedPotion.Size = new Size(50, 50);
             inventoryRedPotion.TabIndex = 14;
             inventoryRedPotion.TabStop = false;
+            inventoryRedPotion.Click += inventoryRedPotion_Click;
             // 
             // tableLayoutPanel1
             // 
@@ -273,45 +278,42 @@
             batHitPoints.AutoSize = true;
             batHitPoints.Location = new Point(100, 22);
             batHitPoints.Name = "batHitPoints";
-            batHitPoints.Size = new Size(50, 20);
+            batHitPoints.Size = new Size(0, 20);
             batHitPoints.TabIndex = 3;
-            batHitPoints.Text = "label4";
             // 
             // Ghostlabel
             // 
             Ghostlabel.AutoSize = true;
             Ghostlabel.Location = new Point(3, 48);
             Ghostlabel.Name = "Ghostlabel";
-            Ghostlabel.Size = new Size(50, 20);
+            Ghostlabel.Size = new Size(67, 20);
             Ghostlabel.TabIndex = 4;
-            Ghostlabel.Text = "label5";
+            Ghostlabel.Text = "GhostHp";
             // 
             // ghostHitPoints
             // 
             ghostHitPoints.AutoSize = true;
             ghostHitPoints.Location = new Point(100, 48);
             ghostHitPoints.Name = "ghostHitPoints";
-            ghostHitPoints.Size = new Size(50, 20);
+            ghostHitPoints.Size = new Size(0, 20);
             ghostHitPoints.TabIndex = 5;
-            ghostHitPoints.Text = "label6";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(3, 72);
             label7.Name = "label7";
-            label7.Size = new Size(50, 20);
+            label7.Size = new Size(68, 20);
             label7.TabIndex = 6;
-            label7.Text = "label7";
+            label7.Text = "GhoulHp";
             // 
             // ghoulHitPoints
             // 
             ghoulHitPoints.AutoSize = true;
             ghoulHitPoints.Location = new Point(100, 72);
             ghoulHitPoints.Name = "ghoulHitPoints";
-            ghoulHitPoints.Size = new Size(50, 20);
+            ghoulHitPoints.Size = new Size(0, 20);
             ghoulHitPoints.TabIndex = 7;
-            ghoulHitPoints.Text = "label8";
             // 
             // label
             // 
@@ -327,82 +329,89 @@
             batlabe.AutoSize = true;
             batlabe.Location = new Point(3, 22);
             batlabe.Name = "batlabe";
-            batlabe.Size = new Size(50, 20);
+            batlabe.Size = new Size(51, 20);
             batlabe.TabIndex = 2;
-            batlabe.Text = "label3";
+            batlabe.Text = "BatHp";
             // 
-            // button1
+            // moveUP
             // 
-            button1.Location = new Point(675, 142);
-            button1.Name = "button1";
-            button1.Size = new Size(55, 29);
-            button1.TabIndex = 16;
-            button1.Text = "Up";
-            button1.UseVisualStyleBackColor = true;
+            moveUP.Location = new Point(675, 142);
+            moveUP.Name = "moveUP";
+            moveUP.Size = new Size(55, 29);
+            moveUP.TabIndex = 16;
+            moveUP.Text = "Up";
+            moveUP.UseVisualStyleBackColor = true;
+            moveUP.Click += moveUP_Click;
             // 
-            // button2
+            // moveDown
             // 
-            button2.Location = new Point(675, 212);
-            button2.Name = "button2";
-            button2.Size = new Size(55, 29);
-            button2.TabIndex = 17;
-            button2.Text = "Down";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            moveDown.Location = new Point(675, 212);
+            moveDown.Name = "moveDown";
+            moveDown.Size = new Size(64, 29);
+            moveDown.TabIndex = 17;
+            moveDown.Text = "Down";
+            moveDown.UseVisualStyleBackColor = true;
+            moveDown.Click += button2_Click;
             // 
-            // button3
+            // moveLeft
             // 
-            button3.Location = new Point(645, 177);
-            button3.Name = "button3";
-            button3.Size = new Size(55, 29);
-            button3.TabIndex = 18;
-            button3.Text = "Left";
-            button3.UseVisualStyleBackColor = true;
+            moveLeft.Location = new Point(645, 177);
+            moveLeft.Name = "moveLeft";
+            moveLeft.Size = new Size(55, 29);
+            moveLeft.TabIndex = 18;
+            moveLeft.Text = "Left";
+            moveLeft.UseVisualStyleBackColor = true;
+            moveLeft.Click += moveLeft_Click;
             // 
-            // button4
+            // moveRight
             // 
-            button4.Location = new Point(706, 177);
-            button4.Name = "button4";
-            button4.Size = new Size(55, 29);
-            button4.TabIndex = 19;
-            button4.Text = "Right";
-            button4.UseVisualStyleBackColor = true;
+            moveRight.Location = new Point(706, 177);
+            moveRight.Name = "moveRight";
+            moveRight.Size = new Size(55, 29);
+            moveRight.TabIndex = 19;
+            moveRight.Text = "Right";
+            moveRight.UseVisualStyleBackColor = true;
+            moveRight.Click += moveRight_Click;
             // 
-            // button5
+            // attackRight
             // 
-            button5.Location = new Point(706, 320);
-            button5.Name = "button5";
-            button5.Size = new Size(55, 29);
-            button5.TabIndex = 23;
-            button5.Text = "Right";
-            button5.UseVisualStyleBackColor = true;
+            attackRight.Location = new Point(706, 320);
+            attackRight.Name = "attackRight";
+            attackRight.Size = new Size(55, 29);
+            attackRight.TabIndex = 23;
+            attackRight.Text = "Right";
+            attackRight.UseVisualStyleBackColor = true;
+            attackRight.Click += attackRight_Click;
             // 
-            // button6
+            // attackLeft
             // 
-            button6.Location = new Point(645, 320);
-            button6.Name = "button6";
-            button6.Size = new Size(55, 29);
-            button6.TabIndex = 22;
-            button6.Text = "Left";
-            button6.UseVisualStyleBackColor = true;
+            attackLeft.Location = new Point(645, 320);
+            attackLeft.Name = "attackLeft";
+            attackLeft.Size = new Size(55, 29);
+            attackLeft.TabIndex = 22;
+            attackLeft.Text = "Left";
+            attackLeft.UseVisualStyleBackColor = true;
+            attackLeft.Click += attackLeft_Click;
             // 
-            // button7
+            // attackDown
             // 
-            button7.Location = new Point(675, 355);
-            button7.Name = "button7";
-            button7.Size = new Size(55, 29);
-            button7.TabIndex = 21;
-            button7.Text = "Down";
-            button7.UseVisualStyleBackColor = true;
+            attackDown.Location = new Point(675, 355);
+            attackDown.Name = "attackDown";
+            attackDown.Size = new Size(64, 29);
+            attackDown.TabIndex = 21;
+            attackDown.Text = "Down";
+            attackDown.UseVisualStyleBackColor = true;
+            attackDown.Click += attackDown_Click;
             // 
-            // button8
+            // attackUp
             // 
-            button8.Location = new Point(675, 285);
-            button8.Name = "button8";
-            button8.Size = new Size(55, 29);
-            button8.TabIndex = 20;
-            button8.Text = "Up";
-            button8.UseVisualStyleBackColor = true;
+            attackUp.Location = new Point(675, 285);
+            attackUp.Name = "attackUp";
+            attackUp.Size = new Size(55, 29);
+            attackUp.TabIndex = 20;
+            attackUp.Text = "Up";
+            attackUp.UseVisualStyleBackColor = true;
+            attackUp.Click += attackUp_Click;
             // 
             // label9
             // 
@@ -431,14 +440,14 @@
             ClientSize = new Size(800, 405);
             Controls.Add(label10);
             Controls.Add(label9);
-            Controls.Add(button5);
-            Controls.Add(button6);
-            Controls.Add(button7);
-            Controls.Add(button8);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(attackRight);
+            Controls.Add(attackLeft);
+            Controls.Add(attackDown);
+            Controls.Add(attackUp);
+            Controls.Add(moveRight);
+            Controls.Add(moveLeft);
+            Controls.Add(moveDown);
+            Controls.Add(moveUP);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(inventoryRedPotion);
             Controls.Add(inventoryBluePotion);
@@ -504,14 +513,14 @@
         private Label label7;
         private Label ghoulHitPoints;
         private Label batlabe;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button moveUP;
+        private Button moveDown;
+        private Button moveLeft;
+        private Button moveRight;
+        private Button attackRight;
+        private Button attackLeft;
+        private Button attackDown;
+        private Button attackUp;
         private Label label9;
         private Label label10;
     }
