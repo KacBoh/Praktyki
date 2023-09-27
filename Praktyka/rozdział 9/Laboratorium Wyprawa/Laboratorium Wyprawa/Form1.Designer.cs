@@ -84,7 +84,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1, 1);
+            pictureBox1.Location = new Point(9, 1);
             pictureBox1.Margin = new Padding(0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(602, 402);
@@ -437,6 +437,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 405);
             Controls.Add(label10);
             Controls.Add(label9);

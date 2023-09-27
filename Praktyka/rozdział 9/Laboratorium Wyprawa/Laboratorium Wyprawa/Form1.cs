@@ -7,6 +7,10 @@ namespace Laboratorium_Wyprawa
         private Game game;
         private Random random = new Random();
 
+        public Form1()
+        {
+            InitializeComponent();
+        }
         private void Form1_load(object sender, EventArgs e)
         {
             game = new Game(new Rectangle(78, 57, 420, 155));
@@ -121,10 +125,6 @@ namespace Laboratorium_Wyprawa
             }
         }
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
