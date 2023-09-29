@@ -608,6 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218ddd1999fa49648adb697083ac8870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wiadomosc: "Peda\u0142"
 --- !u!4 &654155598
 Transform:
   m_ObjectHideFlags: 0
@@ -822,6 +823,7 @@ GameObject:
   - component: {fileID: 999308132}
   - component: {fileID: 999308131}
   - component: {fileID: 999308130}
+  - component: {fileID: 999308135}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -942,6 +944,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &999308135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999308129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40447edb1ace5ae409f1ed18a63d8195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1273322914
 GameObject:
   m_ObjectHideFlags: 0
