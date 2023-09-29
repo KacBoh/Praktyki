@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 92
+  controlID: 17
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,9 +93,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 204
-    height: 553.6
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 533.6
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 553.6
+    y: 533.6
     width: 1223.2
-    height: 217.20001
+    height: 237.20001
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 13}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 39
+  controlID: 18
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,11 +245,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1223.2
-    height: 553.6
+    height: 533.6
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 40
+  controlID: 19
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -268,7 +268,7 @@ MonoBehaviour:
     x: 204
     y: 0
     width: 1019.19995
-    height: 553.6
+    height: 533.6
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -333,9 +333,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 627.2
+    y: 607.2
     width: 1222.2
-    height: 196.20001
+    height: 216.20001
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Ground textures pack/Grass 05
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -365,16 +365,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Ground textures pack/Grass 05
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\kacpe\Documents\GitHub\Praktyki\Unity\Essentials 3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e25c0000
-    m_LastClickedID: 23778
-    m_ExpandedIDs: 000000005e59000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: 6e5e0000
+    m_LastClickedID: 24174
+    m_ExpandedIDs: 00000000d65900004a5e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -402,7 +402,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e25c0000
     m_LastClickedID: 23778
-    m_ExpandedIDs: ffffffff000000005e590000
+    m_ExpandedIDs: 00000000d6590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -528,7 +528,7 @@ MonoBehaviour:
     x: 0
     y: 73.6
     width: 203
-    height: 532.6
+    height: 512.6
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -542,9 +542,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 665f0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6a6affffc4c7ffffbcd5ffff0ae6ffff88e8ffff44ecffff30fbffff
+      m_ExpandedIDs: 16e1ffff30fbffff3e590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
     x: 204
     y: 73.6
     width: 1017.19995
-    height: 532.6
+    height: 512.6
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -898,9 +898,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 30.246908, y: 19.96155, z: -9.337929}
+    m_Target: {x: 38.82175, y: -39.909657, z: 76.28817}
     speed: 2
-    m_Value: {x: 30.246908, y: 19.96155, z: -9.337929}
+    m_Value: {x: 38.82175, y: -39.909657, z: 76.28817}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -946,13 +946,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.045113347, y: 0.81280977, z: 0.06503163, w: 0.5778552}
+    m_Target: {x: -0.2089726, y: -0.20369527, z: 0.042745303, w: -0.95616907}
     speed: 2
-    m_Value: {x: -0.04519185, y: 0.811601, z: 0.0649366, w: 0.5788305}
+    m_Value: {x: -0.20871328, y: -0.20643412, z: 0.043344997, w: -0.95495814}
   m_Size:
-    m_Target: 21.590975
+    m_Target: 55.384254
     speed: 2
-    m_Value: 21.590975
+    m_Value: 57.993984
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     x: 204
     y: 73.6
     width: 1017.19995
-    height: 532.6
+    height: 512.6
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1017.19995, y: 511.59998}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1026,22 +1026,22 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -406.87997
-    m_HBaseRangeMax: 406.87997
-    m_VBaseRangeMin: -204.64
-    m_VBaseRangeMax: 204.64
+    m_HBaseRangeMin: -768
+    m_HBaseRangeMax: 768
+    m_VBaseRangeMin: -432
+    m_VBaseRangeMax: 432
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
+    m_HSlider: 1
     m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -1054,22 +1054,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 1017.19995
-      height: 511.59998
-    m_Scale: {x: 1.25, y: 1.25}
-    m_Translation: {x: 508.59998, y: 255.79999}
+      height: 491.59998
+    m_Scale: {x: 0.6789841, y: 0.6789841}
+    m_Translation: {x: 508.59995, y: 245.8}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -406.87997
-      y: -204.63998
-      width: 813.75995
-      height: 409.27997
+      x: -749.0602
+      y: -362.0114
+      width: 1498.1204
+      height: 724.0228
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1271.5, y: 665.75}
+  m_defaultScale: 0.56898147
+  m_LastWindowPixelSize: {x: 1271.5, y: 640.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
