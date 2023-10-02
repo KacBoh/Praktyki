@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Kula : MonoBehaviour
 {
+    public Vector3 scaleChange;
+    public Vector3 RotateChange;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,7 @@ public class Kula : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.localScale += scaleChange;
+        transform.Rotate(RotateChange);
     }
 }
